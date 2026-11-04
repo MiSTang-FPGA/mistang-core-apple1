@@ -6,7 +6,9 @@ An Apple I style computer for the Sipeed Tang Nano 20K, written from scratch: NM
 - CPU: 200/200 random-program seeds match an independent Python reference (`tools/ref6502.py`, `tools/difftest.py`), binary and decimal mode.
 - System: monitor session driven through the UART receiver matches `tools/sysmodel.py` (`./test_sys.sh`); the video stage matches a reference text renderer.
 - Board bitstream: builds, placed with seed 1, pixel clock 108 MHz at 74.25 needed.
-- Board run and screenshot: pending hardware pass.
+- Board run: the bitstream runs on a real Tang Nano 20K (2026-11-04); the boot banner is on screen in an HDMI capture (below). Keyboard input on the board was not tested.
+
+![720p HDMI capture from the board](docs/img/board-hdmi.png)
 
 ![simulated screen](docs/img/sim-apple1.png)
 
